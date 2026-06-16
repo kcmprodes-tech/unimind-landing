@@ -149,23 +149,9 @@ p { margin: 0; }
 .lang-switch.mobile { align-self: flex-start; margin-top: 12px; }
 
 /* Brand lockup */
-.brand { display: inline-flex; align-items: center; gap: 10px; }
-.brand-mark { flex: none; }
-.brand-word {
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: 19px;
-  letter-spacing: 0.04em;
-  line-height: 1;
-  color: var(--ink);
-  display: flex; flex-direction: column; gap: 3px;
-}
-.brand-sub {
-  font-size: 9.5px; font-weight: 600; letter-spacing: 0.34em;
-  color: var(--muted);
-}
-.brand-light .brand-word { color: var(--white); }
-.brand-light .brand-sub { color: rgba(255, 255, 255, 0.6); }
+.brand { display: inline-flex; align-items: center; }
+.brand-logo { height: 34px; width: auto; display: block; }
+.footer-brand .brand-logo { height: 32px; }
 
 /* Mobile nav */
 .nav-toggle {
