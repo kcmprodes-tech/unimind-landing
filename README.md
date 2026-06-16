@@ -14,8 +14,9 @@ Satu CTA utama → **enquiry / demo form** yang dikirim ke email lewat serverles
 ## Struktur
 
 ```
-index.html          # halaman landing (semua section)
+index.html          # halaman landing (semua section), atribut data-i18n
 styles.css          # design system + responsive
+i18n.js             # kamus ID/EN + language switcher (default: ID, simpan ke localStorage)
 script.js           # nav, reveal animation, validasi & submit form
 api/enquiry.js       # POST handler → email via Resend
 assets/             # logo (SVG), og-image, KG Media logo
