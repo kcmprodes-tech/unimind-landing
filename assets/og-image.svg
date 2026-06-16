@@ -1,0 +1,33 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Unimind Intelligence">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1020"/>
+      <stop offset="1" stop-color="#15193a"/>
+    </linearGradient>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3BC4F2"/>
+      <stop offset=".55" stop-color="#3E8DE6"/>
+      <stop offset="1" stop-color="#6A4FE6"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="80%" cy="10%" r="60%">
+      <stop offset="0" stop-color="#6A4FE6" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#6A4FE6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <!-- mark -->
+  <g transform="translate(90,150) scale(2.6)">
+    <path d="M17 15 V33 a15 15 0 0 0 30 0 V22" fill="none" stroke="url(#g)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="47" cy="9.5" r="5" fill="url(#g)"/>
+  </g>
+
+  <text x="270" y="250" fill="#fff" font-family="Plus Jakarta Sans, Arial, sans-serif" font-weight="800" font-size="58" letter-spacing="4">UNIMIND</text>
+  <text x="272" y="296" fill="#9aa6c4" font-family="Plus Jakarta Sans, Arial, sans-serif" font-weight="600" font-size="24" letter-spacing="14">INTELLIGENCE</text>
+
+  <text x="90" y="430" fill="#fff" font-family="Plus Jakarta Sans, Arial, sans-serif" font-weight="800" font-size="52">Pantau isu, reputasi, dan opini</text>
+  <text x="90" y="492" fill="#fff" font-family="Plus Jakarta Sans, Arial, sans-serif" font-weight="800" font-size="52">publik dalam <tspan fill="#5ec6f5">satu platform</tspan>.</text>
+
+  <text x="90" y="560" fill="#9aa6c4" font-family="Inter, Arial, sans-serif" font-size="26">AI-powered media monitoring &amp; social listening · by KG Media</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Unimind Intelligence">
+  <defs>
+    <linearGradient id="uig" x1="14" y1="8" x2="52" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3BC4F2"/>
+      <stop offset=".55" stop-color="#3E8DE6"/>
+      <stop offset="1" stop-color="#6A4FE6"/>
+    </linearGradient>
+  </defs>
+  <path d="M17 15 V33 a15 15 0 0 0 30 0 V22"
+        fill="none" stroke="url(#uig)" stroke-width="9"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="47" cy="9.5" r="5" fill="url(#uig)"/>
+</svg>
