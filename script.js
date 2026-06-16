@@ -63,6 +63,12 @@
 
   var emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+  // translate helper (falls back to the given Indonesian string)
+  function tr(key, fb) {
+    try { return (window.UnimindI18N && window.UnimindI18N.t(key)) || fb; }
+    catch (e) { return fb; }
+  }
+
   function showStatus(type, msg) {
     if (!statusEl) return;
     statusEl.hidden = false;
@@ -73,7 +79,7 @@
   function setBusy(busy) {
     if (!submitBtn) return;
     submitBtn.setAttribute("aria-busy", String(busy));
-    if (btnLabel) btnLabel.textContent = busy ? "Mengirim..." : "Minta Demo / Kirim";
+    if (btnLabel) btnLabel.textContent = busy ? tr("form.sending", "Mengirim...") : tr("form.submit", "Minta Demo / Kirim");
   }
 
   function validate() {
@@ -105,7 +111,7 @@
     if (statusEl) statusEl.hidden = true;
 
     if (!validate()) {
-      showStatus("error", "Mohon lengkapi data yang ditandai dengan benar.");
+      showStatus("error", tr("form.err.validate", "Mohon lengkapi data yang ditandai dengan benar."));
       return;
     }
 
@@ -139,13 +145,13 @@
       .then(function (r) {
         if (r.ok && r.data && r.data.ok) {
           form.reset();
-          showStatus("success", "Terima kasih! Permintaan Anda terkirim. Tim Unimind Intelligence akan segera menghubungi Anda.");
+          showStatus("success", tr("form.ok", "Terima kasih! Permintaan Anda terkirim. Tim Unimind Intelligence akan segera menghubungi Anda."));
         } else {
-          showStatus("error", (r.data && r.data.error) || "Maaf, terjadi kesalahan. Silakan coba lagi.");
+          showStatus("error", (r.data && r.data.error) || tr("form.err.server", "Maaf, terjadi kesalahan. Silakan coba lagi."));
         }
       })
       .catch(function () {
-        showStatus("error", "Gagal mengirim. Periksa koneksi Anda lalu coba lagi.");
+        showStatus("error", tr("form.err.network", "Gagal mengirim. Periksa koneksi Anda lalu coba lagi."));
       })
       .finally(function () {
         setBusy(false);

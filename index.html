@@ -37,14 +37,18 @@
       </a>
 
       <nav class="main-nav" aria-label="Navigasi utama">
-        <a href="#fitur">Fitur</a>
-        <a href="#cara-kerja">Cara Kerja</a>
-        <a href="#use-case">Use Case</a>
-        <a href="#kenapa">Kenapa Unimind</a>
+        <a href="#fitur" data-i18n="nav.features">Fitur</a>
+        <a href="#cara-kerja" data-i18n="nav.how">Cara Kerja</a>
+        <a href="#use-case" data-i18n="nav.usecase">Use Case</a>
+        <a href="#kenapa" data-i18n="nav.why">Kenapa Unimind</a>
       </nav>
 
       <div class="header-actions">
-        <a href="#demo" class="btn btn-primary btn-sm">Minta Demo</a>
+        <div class="lang-switch" role="group" aria-label="Pilih bahasa / Select language">
+          <button type="button" class="lang-opt" data-lang="id">ID</button>
+          <button type="button" class="lang-opt" data-lang="en">EN</button>
+        </div>
+        <a href="#demo" class="btn btn-primary btn-sm" data-i18n="cta.demo">Minta Demo</a>
       </div>
 
       <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false" aria-controls="mobileNav">
@@ -53,11 +57,15 @@
     </div>
 
     <div class="mobile-nav" id="mobileNav" hidden>
-      <a href="#fitur">Fitur</a>
-      <a href="#cara-kerja">Cara Kerja</a>
-      <a href="#use-case">Use Case</a>
-      <a href="#kenapa">Kenapa Unimind</a>
-      <a href="#demo" class="btn btn-primary">Minta Demo</a>
+      <a href="#fitur" data-i18n="nav.features">Fitur</a>
+      <a href="#cara-kerja" data-i18n="nav.how">Cara Kerja</a>
+      <a href="#use-case" data-i18n="nav.usecase">Use Case</a>
+      <a href="#kenapa" data-i18n="nav.why">Kenapa Unimind</a>
+      <div class="lang-switch mobile" role="group" aria-label="Pilih bahasa / Select language">
+        <button type="button" class="lang-opt" data-lang="id">ID</button>
+        <button type="button" class="lang-opt" data-lang="en">EN</button>
+      </div>
+      <a href="#demo" class="btn btn-primary" data-i18n="cta.demo">Minta Demo</a>
     </div>
   </header>
 
@@ -68,14 +76,14 @@
       <div class="hero-bg" aria-hidden="true"></div>
       <div class="shell hero-grid">
         <div class="hero-copy reveal">
-          <span class="eyebrow"><i class="ph-fill ph-sparkle" aria-hidden="true"></i> AI-powered media intelligence</span>
-          <h1>Pantau isu, reputasi, dan opini publik dalam <span class="grad-text">satu platform intelligence</span>.</h1>
-          <p class="lead">AI-powered news media monitoring &amp; social media listening — ubah data media dan sosial menjadi insight strategis melalui monitoring, sentiment analysis, alert, dan report siap pakai.</p>
+          <span class="eyebrow"><i class="ph-fill ph-sparkle" aria-hidden="true"></i> <span data-i18n="hero.eyebrow">AI-powered media intelligence</span></span>
+          <h1 data-i18n="hero.title">Pantau isu, reputasi, dan opini publik dalam <span class="grad-text">satu platform intelligence</span>.</h1>
+          <p class="lead" data-i18n="hero.lead">AI-powered news media monitoring &amp; social media listening — ubah data media dan sosial menjadi insight strategis melalui monitoring, sentiment analysis, alert, dan report siap pakai.</p>
           <div class="hero-cta">
-            <a href="#demo" class="btn btn-primary btn-lg">Minta Demo <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
-            <a href="#fitur" class="btn btn-ghost btn-lg">Lihat Fitur</a>
+            <a href="#demo" class="btn btn-primary btn-lg"><span data-i18n="cta.demo">Minta Demo</span> <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+            <a href="#fitur" class="btn btn-ghost btn-lg" data-i18n="hero.cta2">Lihat Fitur</a>
           </div>
-          <p class="hero-trust"><i class="ph-fill ph-shield-check" aria-hidden="true"></i> Dikembangkan oleh <strong>KG Media</strong> — Kompas Gramedia Group</p>
+          <p class="hero-trust"><i class="ph-fill ph-shield-check" aria-hidden="true"></i> <span data-i18n="hero.trust">Dikembangkan oleh <strong>KG Media</strong> — Kompas Gramedia Group</span></p>
         </div>
 
         <!-- Visual storytelling: stylized dashboard mock -->
@@ -84,27 +92,27 @@
             <div class="dash-top">
               <span class="dash-dot"></span><span class="dash-dot"></span><span class="dash-dot"></span>
               <span class="dash-title">Unimind · Dashboard</span>
-              <span class="dash-live"><span class="pulse"></span>Real-time</span>
+              <span class="dash-live"><span class="pulse"></span><span data-i18n="dash.live">Real-time</span></span>
             </div>
             <div class="dash-body">
               <div class="dash-stats">
-                <div class="mini-card"><span class="mini-label">Total Artikel</span><span class="mini-val">12.480</span><span class="mini-trend up"><i class="ph-bold ph-trend-up"></i> 18%</span></div>
-                <div class="mini-card"><span class="mini-label">Mentions</span><span class="mini-val">48.2K</span><span class="mini-trend up"><i class="ph-bold ph-trend-up"></i> 9%</span></div>
+                <div class="mini-card"><span class="mini-label" data-i18n="dash.total">Total Artikel</span><span class="mini-val">12.480</span><span class="mini-trend up"><i class="ph-bold ph-trend-up"></i> 18%</span></div>
+                <div class="mini-card"><span class="mini-label" data-i18n="dash.mentions">Mentions</span><span class="mini-val">48.2K</span><span class="mini-trend up"><i class="ph-bold ph-trend-up"></i> 9%</span></div>
               </div>
               <div class="dash-row">
                 <div class="dash-panel sentiment">
-                  <span class="panel-label">Sentiment</span>
+                  <span class="panel-label" data-i18n="dash.sentiment">Sentiment</span>
                   <div class="donut" style="--pos:62;--neu:26;--neg:12;">
-                    <div class="donut-hole"><b>62%</b><small>Positif</small></div>
+                    <div class="donut-hole"><b>62%</b><small data-i18n="dash.pos">Positif</small></div>
                   </div>
                   <ul class="legend">
-                    <li><i class="dot pos"></i>Positif</li>
-                    <li><i class="dot neu"></i>Netral</li>
-                    <li><i class="dot neg"></i>Negatif</li>
+                    <li><i class="dot pos"></i><span data-i18n="dash.pos">Positif</span></li>
+                    <li><i class="dot neu"></i><span data-i18n="dash.neu">Netral</span></li>
+                    <li><i class="dot neg"></i><span data-i18n="dash.neg">Negatif</span></li>
                   </ul>
                 </div>
                 <div class="dash-panel trend">
-                  <span class="panel-label">Eksposur 7 hari</span>
+                  <span class="panel-label" data-i18n="dash.exposure">Eksposur 7 hari</span>
                   <svg class="spark" viewBox="0 0 220 90" preserveAspectRatio="none">
                     <defs>
                       <linearGradient id="sg" x1="0" y1="0" x2="0" y2="1">
@@ -121,21 +129,21 @@
                 </div>
               </div>
               <div class="dash-tags">
-                <span class="panel-label">Topik teratas</span>
+                <span class="panel-label" data-i18n="dash.topics">Topik teratas</span>
                 <div class="chips">
-                  <span class="chip lg">peluncuran</span>
-                  <span class="chip md">layanan</span>
-                  <span class="chip">harga</span>
-                  <span class="chip sm">kompetitor</span>
-                  <span class="chip md">kebijakan</span>
-                  <span class="chip">sentimen</span>
+                  <span class="chip lg" data-i18n="dash.chip1">peluncuran</span>
+                  <span class="chip md" data-i18n="dash.chip2">layanan</span>
+                  <span class="chip" data-i18n="dash.chip3">harga</span>
+                  <span class="chip sm" data-i18n="dash.chip4">kompetitor</span>
+                  <span class="chip md" data-i18n="dash.chip5">kebijakan</span>
+                  <span class="chip" data-i18n="dash.chip6">sentimen</span>
                 </div>
               </div>
             </div>
           </div>
           <div class="alert-toast">
             <i class="ph-fill ph-bell-ringing" aria-hidden="true"></i>
-            <div><b>Alert</b><span>Lonjakan mention terdeteksi</span></div>
+            <div><b data-i18n="dash.alert">Alert</b><span data-i18n="dash.alertmsg">Lonjakan mention terdeteksi</span></div>
           </div>
         </div>
       </div>
@@ -144,18 +152,18 @@
     <!-- ============ TRUST / STATS ============ -->
     <section class="stats-strip">
       <div class="shell stats-grid">
-        <div class="stat reveal"><span class="stat-num">Real-time</span><span class="stat-cap">Crawling &amp; analisis</span></div>
-        <div class="stat reveal"><span class="stat-num">9.589+</span><span class="stat-cap">Publishers terpantau</span></div>
-        <div class="stat reveal"><span class="stat-num">Multi-source</span><span class="stat-cap">Online · Sosial · Cetak · Livestream</span></div>
-        <div class="stat reveal"><span class="stat-num">PDF · PPT · XLSX</span><span class="stat-cap">Export report siap pakai</span></div>
+        <div class="stat reveal"><span class="stat-num" data-i18n="stat1.num">Real-time</span><span class="stat-cap" data-i18n="stat1.cap">Crawling &amp; analisis</span></div>
+        <div class="stat reveal"><span class="stat-num" data-i18n="stat2.num">9.589+</span><span class="stat-cap" data-i18n="stat2.cap">Publishers terpantau</span></div>
+        <div class="stat reveal"><span class="stat-num" data-i18n="stat3.num">Multi-source</span><span class="stat-cap" data-i18n="stat3.cap">Online · Sosial · Cetak · Livestream</span></div>
+        <div class="stat reveal"><span class="stat-num" data-i18n="stat4.num">PDF · PPT · XLSX</span><span class="stat-cap" data-i18n="stat4.cap">Export report siap pakai</span></div>
       </div>
     </section>
 
     <!-- ============ VALUE FRAMING ============ -->
     <section class="section value">
       <div class="shell value-inner reveal">
-        <h2>Ubah data media &amp; sosial jadi <span class="grad-text">insight strategis</span></h2>
-        <p>Unimind Intelligence membantu corporate communication, PR, public affairs, brand, dan tim riset memantau pemberitaan serta percakapan publik, mendeteksi isu negatif lebih awal, dan mengukur eksposur — semua dalam satu dashboard yang mudah dipahami.</p>
+        <h2 data-i18n="value.title">Ubah data media &amp; sosial jadi <span class="grad-text">insight strategis</span></h2>
+        <p data-i18n="value.p">Unimind Intelligence membantu corporate communication, PR, public affairs, brand, dan tim riset memantau pemberitaan serta percakapan publik, mendeteksi isu negatif lebih awal, dan mengukur eksposur — semua dalam satu dashboard yang mudah dipahami.</p>
       </div>
     </section>
 
@@ -163,41 +171,41 @@
     <section class="section" id="fitur">
       <div class="shell">
         <div class="section-head reveal">
-          <span class="kicker">Fitur</span>
-          <h2>Semua yang dibutuhkan untuk memantau brand &amp; isu</h2>
-          <p class="section-sub">Enam kemampuan inti dalam satu platform intelligence.</p>
+          <span class="kicker" data-i18n="feat.kicker">Fitur</span>
+          <h2 data-i18n="feat.head">Semua yang dibutuhkan untuk memantau brand &amp; isu</h2>
+          <p class="section-sub" data-i18n="feat.sub">Enam kemampuan inti dalam satu platform intelligence.</p>
         </div>
 
         <div class="feature-grid">
           <article class="feature-card reveal">
             <span class="feature-icon"><i class="ph ph-newspaper" aria-hidden="true"></i></span>
-            <h3>News Media Monitoring</h3>
-            <p>Pantau pemberitaan media terkait brand, produk, kompetitor, atau isu tertentu — lengkap dengan total artikel, sentiment summary, topic breakdown, wordcloud, dan detail sumber.</p>
+            <h3 data-i18n="f1.title">News Media Monitoring</h3>
+            <p data-i18n="f1.desc">Pantau pemberitaan media terkait brand, produk, kompetitor, atau isu tertentu — lengkap dengan total artikel, sentiment summary, topic breakdown, wordcloud, dan detail sumber.</p>
           </article>
           <article class="feature-card reveal">
             <span class="feature-icon"><i class="ph ph-chats-circle" aria-hidden="true"></i></span>
-            <h3>Social Media Listening</h3>
-            <p>Pantau percakapan publik di media sosial: jumlah post, mention detail, topik pembicaraan, dan sentimen terhadap brand atau isu yang sedang dipantau.</p>
+            <h3 data-i18n="f2.title">Social Media Listening</h3>
+            <p data-i18n="f2.desc">Pantau percakapan publik di media sosial: jumlah post, mention detail, topik pembicaraan, dan sentimen terhadap brand atau isu yang sedang dipantau.</p>
           </article>
           <article class="feature-card reveal">
             <span class="feature-icon"><i class="ph ph-smiley" aria-hidden="true"></i></span>
-            <h3>Sentiment &amp; Topic Analysis</h3>
-            <p>Analisis tone positif, negatif, dan netral, serta identifikasi topik dan kata kunci yang paling sering muncul di pemberitaan dan percakapan sosial.</p>
+            <h3 data-i18n="f3.title">Sentiment &amp; Topic Analysis</h3>
+            <p data-i18n="f3.desc">Analisis tone positif, negatif, dan netral, serta identifikasi topik dan kata kunci yang paling sering muncul di pemberitaan dan percakapan sosial.</p>
           </article>
           <article class="feature-card reveal">
             <span class="feature-icon"><i class="ph ph-bell-ringing" aria-hidden="true"></i></span>
-            <h3>Alert Notification</h3>
-            <p>Notifikasi berbasis keyword atau metrik tertentu agar tim mengetahui perkembangan isu terbaru dan dapat merespons lebih cepat.</p>
+            <h3 data-i18n="f4.title">Alert Notification</h3>
+            <p data-i18n="f4.desc">Notifikasi berbasis keyword atau metrik tertentu agar tim mengetahui perkembangan isu terbaru dan dapat merespons lebih cepat.</p>
           </article>
           <article class="feature-card reveal">
             <span class="feature-icon"><i class="ph ph-file-text" aria-hidden="true"></i></span>
-            <h3>Reports &amp; Export</h3>
-            <p>Kelola report history, instant report, dan export data untuk analisis lanjutan, reporting internal, maupun kebutuhan eksekutif.</p>
+            <h3 data-i18n="f5.title">Reports &amp; Export</h3>
+            <p data-i18n="f5.desc">Kelola report history, instant report, dan export data untuk analisis lanjutan, reporting internal, maupun kebutuhan eksekutif.</p>
           </article>
           <article class="feature-card reveal">
             <span class="feature-icon"><i class="ph ph-database" aria-hidden="true"></i></span>
-            <h3>Multi-Source Data</h3>
-            <p>Kelola data dari berbagai sumber: media online, akun sosial, media cetak/e-paper, livestream, hingga data vendor lewat upload CSV/XLSX.</p>
+            <h3 data-i18n="f6.title">Multi-Source Data</h3>
+            <p data-i18n="f6.desc">Kelola data dari berbagai sumber: media online, akun sosial, media cetak/e-paper, livestream, hingga data vendor lewat upload CSV/XLSX.</p>
           </article>
         </div>
       </div>
@@ -207,35 +215,35 @@
     <section class="section how" id="cara-kerja">
       <div class="shell">
         <div class="section-head reveal">
-          <span class="kicker">Cara Kerja</span>
-          <h2>Dari keyword sampai report dalam empat langkah</h2>
-          <p class="section-sub">Alur sederhana, hasil yang terstruktur dan terukur.</p>
+          <span class="kicker" data-i18n="how.kicker">Cara Kerja</span>
+          <h2 data-i18n="how.head">Dari keyword sampai report dalam empat langkah</h2>
+          <p class="section-sub" data-i18n="how.sub">Alur sederhana, hasil yang terstruktur dan terukur.</p>
         </div>
 
         <ol class="steps">
           <li class="step reveal">
             <span class="step-num">1</span>
             <span class="step-icon"><i class="ph ph-target" aria-hidden="true"></i></span>
-            <h3>Tentukan topik &amp; sumber</h3>
-            <p>Atur keyword, brand, kompetitor, atau isu yang ingin dipantau beserta sumber media online, sosial, cetak, dan livestream.</p>
+            <h3 data-i18n="s1.title">Tentukan topik &amp; sumber</h3>
+            <p data-i18n="s1.desc">Atur keyword, brand, kompetitor, atau isu yang ingin dipantau beserta sumber media online, sosial, cetak, dan livestream.</p>
           </li>
           <li class="step reveal">
             <span class="step-num">2</span>
             <span class="step-icon"><i class="ph ph-cpu" aria-hidden="true"></i></span>
-            <h3>Crawling &amp; analisis real-time</h3>
-            <p>Sistem mengumpulkan data secara real-time lalu menganalisis sentimen, topik, dan kata kunci secara otomatis.</p>
+            <h3 data-i18n="s2.title">Crawling &amp; analisis real-time</h3>
+            <p data-i18n="s2.desc">Sistem mengumpulkan data secara real-time lalu menganalisis sentimen, topik, dan kata kunci secara otomatis.</p>
           </li>
           <li class="step reveal">
             <span class="step-num">3</span>
             <span class="step-icon"><i class="ph ph-monitor" aria-hidden="true"></i></span>
-            <h3>Pantau dashboard &amp; alert</h3>
-            <p>Lihat perkembangan di dashboard yang mudah dipahami dan terima alert saat ada lonjakan mention atau isu negatif.</p>
+            <h3 data-i18n="s3.title">Pantau dashboard &amp; alert</h3>
+            <p data-i18n="s3.desc">Lihat perkembangan di dashboard yang mudah dipahami dan terima alert saat ada lonjakan mention atau isu negatif.</p>
           </li>
           <li class="step reveal">
             <span class="step-num">4</span>
             <span class="step-icon"><i class="ph ph-export" aria-hidden="true"></i></span>
-            <h3>Export report siap pakai</h3>
-            <p>Hasilkan laporan harian, mingguan, atau custom dalam format PDF/PPT untuk rapat, evaluasi, dan pengambilan keputusan.</p>
+            <h3 data-i18n="s4.title">Export report siap pakai</h3>
+            <p data-i18n="s4.desc">Hasilkan laporan harian, mingguan, atau custom dalam format PDF/PPT untuk rapat, evaluasi, dan pengambilan keputusan.</p>
           </li>
         </ol>
       </div>
@@ -245,15 +253,15 @@
     <section class="section" id="use-case">
       <div class="shell">
         <div class="section-head reveal">
-          <span class="kicker">Use Case</span>
-          <h2>Dipakai untuk kebutuhan strategis tim Anda</h2>
+          <span class="kicker" data-i18n="uc.kicker">Use Case</span>
+          <h2 data-i18n="uc.head">Dipakai untuk kebutuhan strategis tim Anda</h2>
         </div>
         <div class="usecase-grid">
-          <div class="usecase reveal"><i class="ph ph-shield-star" aria-hidden="true"></i><div><h3>Brand &amp; Reputation Monitoring</h3><p>Pantau persepsi publik terhadap perusahaan, brand, produk, layanan, atau pimpinan.</p></div></div>
-          <div class="usecase reveal"><i class="ph ph-warning-octagon" aria-hidden="true"></i><div><h3>Crisis &amp; Issue Alert</h3><p>Deteksi isu negatif lebih awal agar tim komunikasi dapat merespons lebih cepat.</p></div></div>
-          <div class="usecase reveal"><i class="ph ph-megaphone" aria-hidden="true"></i><div><h3>Campaign Monitoring</h3><p>Lihat dampak campaign dari pemberitaan, percakapan sosial, sentimen, dan topik berkembang.</p></div></div>
-          <div class="usecase reveal"><i class="ph ph-chart-line-up" aria-hidden="true"></i><div><h3>Competitor &amp; Industry</h3><p>Bandingkan eksposur dan percakapan publik terkait kompetitor atau isu industri.</p></div></div>
-          <div class="usecase reveal"><i class="ph ph-presentation-chart" aria-hidden="true"></i><div><h3>Executive Reporting</h3><p>Laporan monitoring siap pakai untuk rapat, evaluasi, dan pengambilan keputusan.</p></div></div>
+          <div class="usecase reveal"><i class="ph ph-shield-star" aria-hidden="true"></i><div><h3 data-i18n="uc1.title">Brand &amp; Reputation Monitoring</h3><p data-i18n="uc1.desc">Pantau persepsi publik terhadap perusahaan, brand, produk, layanan, atau pimpinan.</p></div></div>
+          <div class="usecase reveal"><i class="ph ph-warning-octagon" aria-hidden="true"></i><div><h3 data-i18n="uc2.title">Crisis &amp; Issue Alert</h3><p data-i18n="uc2.desc">Deteksi isu negatif lebih awal agar tim komunikasi dapat merespons lebih cepat.</p></div></div>
+          <div class="usecase reveal"><i class="ph ph-megaphone" aria-hidden="true"></i><div><h3 data-i18n="uc3.title">Campaign Monitoring</h3><p data-i18n="uc3.desc">Lihat dampak campaign dari pemberitaan, percakapan sosial, sentimen, dan topik berkembang.</p></div></div>
+          <div class="usecase reveal"><i class="ph ph-chart-line-up" aria-hidden="true"></i><div><h3 data-i18n="uc4.title">Competitor &amp; Industry</h3><p data-i18n="uc4.desc">Bandingkan eksposur dan percakapan publik terkait kompetitor atau isu industri.</p></div></div>
+          <div class="usecase reveal"><i class="ph ph-presentation-chart" aria-hidden="true"></i><div><h3 data-i18n="uc5.title">Executive Reporting</h3><p data-i18n="uc5.desc">Laporan monitoring siap pakai untuk rapat, evaluasi, dan pengambilan keputusan.</p></div></div>
         </div>
       </div>
     </section>
@@ -262,15 +270,15 @@
     <section class="section why" id="kenapa">
       <div class="shell">
         <div class="section-head reveal">
-          <span class="kicker">Kenapa Unimind</span>
-          <h2>Cepat, terstruktur, terukur — dan kredibel</h2>
+          <span class="kicker" data-i18n="why.kicker">Kenapa Unimind</span>
+          <h2 data-i18n="why.head">Cepat, terstruktur, terukur — dan kredibel</h2>
         </div>
         <div class="why-grid">
-          <div class="why-card reveal"><i class="ph-fill ph-lightning" aria-hidden="true"></i><h3>Cepat</h3><p>Bantu tim membaca perkembangan isu lebih awal.</p></div>
-          <div class="why-card reveal"><i class="ph-fill ph-squares-four" aria-hidden="true"></i><h3>Terstruktur</h3><p>Data media &amp; sosial ditampilkan dalam dashboard yang mudah dipahami.</p></div>
-          <div class="why-card reveal"><i class="ph-fill ph-gauge" aria-hidden="true"></i><h3>Terukur</h3><p>Metrik mention, sentimen, topik, source, dan report yang jelas.</p></div>
-          <div class="why-card reveal"><i class="ph-fill ph-puzzle-piece" aria-hidden="true"></i><h3>Fleksibel</h3><p>Mendukung berbagai topik, akun sosial, media cetak, livestream, &amp; data vendor.</p></div>
-          <div class="why-card reveal"><i class="ph-fill ph-seal-check" aria-hidden="true"></i><h3>Kredibel</h3><p>Dikembangkan oleh Kompas Gramedia group dengan pemahaman ekosistem media Indonesia.</p></div>
+          <div class="why-card reveal"><i class="ph-fill ph-lightning" aria-hidden="true"></i><h3 data-i18n="w1.title">Cepat</h3><p data-i18n="w1.desc">Bantu tim membaca perkembangan isu lebih awal.</p></div>
+          <div class="why-card reveal"><i class="ph-fill ph-squares-four" aria-hidden="true"></i><h3 data-i18n="w2.title">Terstruktur</h3><p data-i18n="w2.desc">Data media &amp; sosial ditampilkan dalam dashboard yang mudah dipahami.</p></div>
+          <div class="why-card reveal"><i class="ph-fill ph-gauge" aria-hidden="true"></i><h3 data-i18n="w3.title">Terukur</h3><p data-i18n="w3.desc">Metrik mention, sentimen, topik, source, dan report yang jelas.</p></div>
+          <div class="why-card reveal"><i class="ph-fill ph-puzzle-piece" aria-hidden="true"></i><h3 data-i18n="w4.title">Fleksibel</h3><p data-i18n="w4.desc">Mendukung berbagai topik, akun sosial, media cetak, livestream, &amp; data vendor.</p></div>
+          <div class="why-card reveal"><i class="ph-fill ph-seal-check" aria-hidden="true"></i><h3 data-i18n="w5.title">Kredibel</h3><p data-i18n="w5.desc">Dikembangkan oleh Kompas Gramedia group dengan pemahaman ekosistem media Indonesia.</p></div>
         </div>
       </div>
     </section>
@@ -279,58 +287,58 @@
     <section class="section demo" id="demo">
       <div class="shell demo-grid">
         <div class="demo-copy reveal">
-          <span class="kicker light">Minta Demo</span>
-          <h2>Lihat Unimind Intelligence bekerja untuk brand Anda</h2>
-          <p>Isi formulir dan tim kami akan menghubungi Anda untuk menjadwalkan demo serta mendiskusikan kebutuhan monitoring Anda.</p>
+          <span class="kicker light" data-i18n="demo.kicker">Minta Demo</span>
+          <h2 data-i18n="demo.head">Lihat Unimind Intelligence bekerja untuk brand Anda</h2>
+          <p data-i18n="demo.p">Isi formulir dan tim kami akan menghubungi Anda untuk menjadwalkan demo serta mendiskusikan kebutuhan monitoring Anda.</p>
           <ul class="demo-points">
-            <li><i class="ph ph-check-circle" aria-hidden="true"></i> Walkthrough dashboard sesuai kebutuhan</li>
-            <li><i class="ph ph-check-circle" aria-hidden="true"></i> Konsultasi sumber data &amp; keyword</li>
-            <li><i class="ph ph-check-circle" aria-hidden="true"></i> Contoh report &amp; sentiment analysis</li>
+            <li><i class="ph ph-check-circle" aria-hidden="true"></i> <span data-i18n="demo.point1">Walkthrough dashboard sesuai kebutuhan</span></li>
+            <li><i class="ph ph-check-circle" aria-hidden="true"></i> <span data-i18n="demo.point2">Konsultasi sumber data &amp; keyword</span></li>
+            <li><i class="ph ph-check-circle" aria-hidden="true"></i> <span data-i18n="demo.point3">Contoh report &amp; sentiment analysis</span></li>
           </ul>
         </div>
 
         <form class="demo-form reveal" id="enquiryForm" novalidate>
           <div class="field">
-            <label for="name">Nama lengkap <span class="req">*</span></label>
-            <input id="name" name="name" type="text" autocomplete="name" required placeholder="Nama Anda" />
+            <label for="name"><span data-i18n="form.name">Nama lengkap</span> <span class="req">*</span></label>
+            <input id="name" name="name" type="text" autocomplete="name" required placeholder="Nama Anda" data-i18n-placeholder="form.name.ph" />
           </div>
           <div class="field-row">
             <div class="field">
-              <label for="email">Email kantor <span class="req">*</span></label>
-              <input id="email" name="email" type="email" autocomplete="email" required placeholder="nama@perusahaan.com" />
+              <label for="email"><span data-i18n="form.email">Email kantor</span> <span class="req">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" required placeholder="nama@perusahaan.com" data-i18n-placeholder="form.email.ph" />
             </div>
             <div class="field">
-              <label for="whatsapp">Nomor WhatsApp <span class="req">*</span></label>
-              <input id="whatsapp" name="whatsapp" type="tel" inputmode="numeric" autocomplete="tel" required placeholder="08xxxxxxxxxx" />
+              <label for="whatsapp"><span data-i18n="form.whatsapp">Nomor WhatsApp</span> <span class="req">*</span></label>
+              <input id="whatsapp" name="whatsapp" type="tel" inputmode="numeric" autocomplete="tel" required placeholder="08xxxxxxxxxx" data-i18n-placeholder="form.whatsapp.ph" />
             </div>
           </div>
           <div class="field-row">
             <div class="field">
-              <label for="company">Perusahaan / organisasi <span class="req">*</span></label>
-              <input id="company" name="company" type="text" autocomplete="organization" required placeholder="Nama perusahaan" />
+              <label for="company"><span data-i18n="form.company">Perusahaan / organisasi</span> <span class="req">*</span></label>
+              <input id="company" name="company" type="text" autocomplete="organization" required placeholder="Nama perusahaan" data-i18n-placeholder="form.company.ph" />
             </div>
             <div class="field">
-              <label for="role">Jabatan</label>
-              <input id="role" name="role" type="text" autocomplete="organization-title" placeholder="Mis. PR Manager" />
+              <label for="role" data-i18n="form.role">Jabatan</label>
+              <input id="role" name="role" type="text" autocomplete="organization-title" placeholder="Mis. PR Manager" data-i18n-placeholder="form.role.ph" />
             </div>
           </div>
 
           <fieldset class="field needs">
-            <legend>Kebutuhan utama</legend>
+            <legend data-i18n="form.needs">Kebutuhan utama</legend>
             <div class="checks">
-              <label class="check"><input type="checkbox" name="needs" value="News media monitoring" /> News media monitoring</label>
-              <label class="check"><input type="checkbox" name="needs" value="Social media listening" /> Social media listening</label>
-              <label class="check"><input type="checkbox" name="needs" value="Sentiment analysis" /> Sentiment analysis</label>
-              <label class="check"><input type="checkbox" name="needs" value="Alert notification" /> Alert notification</label>
-              <label class="check"><input type="checkbox" name="needs" value="Reports & export" /> Reports &amp; export</label>
-              <label class="check"><input type="checkbox" name="needs" value="Multi-source data" /> Multi-source data</label>
-              <label class="check"><input type="checkbox" name="needs" value="Lainnya" /> Lainnya</label>
+              <label class="check"><input type="checkbox" name="needs" value="News media monitoring" /> <span data-i18n="need.news">News media monitoring</span></label>
+              <label class="check"><input type="checkbox" name="needs" value="Social media listening" /> <span data-i18n="need.social">Social media listening</span></label>
+              <label class="check"><input type="checkbox" name="needs" value="Sentiment analysis" /> <span data-i18n="need.sentiment">Sentiment analysis</span></label>
+              <label class="check"><input type="checkbox" name="needs" value="Alert notification" /> <span data-i18n="need.alert">Alert notification</span></label>
+              <label class="check"><input type="checkbox" name="needs" value="Reports & export" /> <span data-i18n="need.reports">Reports &amp; export</span></label>
+              <label class="check"><input type="checkbox" name="needs" value="Multi-source data" /> <span data-i18n="need.multi">Multi-source data</span></label>
+              <label class="check"><input type="checkbox" name="needs" value="Lainnya" /> <span data-i18n="need.other">Lainnya</span></label>
             </div>
           </fieldset>
 
           <div class="field">
-            <label for="message">Pesan tambahan</label>
-            <textarea id="message" name="message" rows="3" placeholder="Ceritakan kebutuhan monitoring Anda (opsional)"></textarea>
+            <label for="message" data-i18n="form.message">Pesan tambahan</label>
+            <textarea id="message" name="message" rows="3" placeholder="Ceritakan kebutuhan monitoring Anda (opsional)" data-i18n-placeholder="form.message.ph"></textarea>
           </div>
 
           <!-- Honeypot anti-spam: must stay empty -->
@@ -340,12 +348,12 @@
           </div>
 
           <button type="submit" class="btn btn-primary btn-lg btn-block" id="submitBtn">
-            <span class="btn-label">Minta Demo / Kirim</span>
+            <span class="btn-label" data-i18n="form.submit">Minta Demo / Kirim</span>
             <i class="ph ph-arrow-right" aria-hidden="true"></i>
           </button>
 
           <p class="form-status" id="formStatus" role="status" aria-live="polite" hidden></p>
-          <p class="form-fineprint">Dengan mengirim, Anda setuju dihubungi tim Unimind Intelligence terkait permintaan ini.</p>
+          <p class="form-fineprint" data-i18n="form.fineprint">Dengan mengirim, Anda setuju dihubungi tim Unimind Intelligence terkait permintaan ini.</p>
         </form>
       </div>
     </section>
@@ -359,27 +367,28 @@
           <img src="/assets/unimind-mark.svg" alt="" class="brand-mark" width="36" height="36" />
           <span class="brand-word">UNIMIND<span class="brand-sub">INTELLIGENCE</span></span>
         </a>
-        <p class="footer-tag">Pantau isu, reputasi, dan opini publik dalam satu platform intelligence.</p>
+        <p class="footer-tag" data-i18n="footer.tag">Pantau isu, reputasi, dan opini publik dalam satu platform intelligence.</p>
       </div>
 
       <nav class="footer-nav" aria-label="Footer">
-        <a href="#fitur">Fitur</a>
-        <a href="#cara-kerja">Cara Kerja</a>
-        <a href="#use-case">Use Case</a>
-        <a href="#demo">Minta Demo</a>
+        <a href="#fitur" data-i18n="nav.features">Fitur</a>
+        <a href="#cara-kerja" data-i18n="nav.how">Cara Kerja</a>
+        <a href="#use-case" data-i18n="nav.usecase">Use Case</a>
+        <a href="#demo" data-i18n="cta.demo">Minta Demo</a>
       </nav>
 
       <div class="footer-by">
-        <span>Product by</span>
+        <span data-i18n="footer.by">Product by</span>
         <strong>KG Media</strong>
         <span class="footer-group">Kompas Gramedia Group</span>
       </div>
     </div>
     <div class="shell footer-bottom">
-      <span>© <span id="year">2026</span> Unimind Intelligence · KG Media. All rights reserved.</span>
+      <span>© <span id="year">2026</span> Unimind Intelligence · KG Media. <span data-i18n="footer.rights">Semua hak dilindungi.</span></span>
     </div>
   </footer>
 
+  <script src="i18n.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
